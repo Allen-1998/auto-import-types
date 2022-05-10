@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/auto-import-types?color=a1b858&label=)](https://www.npmjs.com/package/auto-import-types)
 
-Auto Import Types on-demand for Vite. With TypeScript support. Powered by [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import).It will automatically configure declared types in esLint's global option.
+Auto Import Types on-demand for Vite. With TypeScript support. The implementation idea by [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import).It will automatically configure declared types in esLint's global option.
 
 ## Install
 
