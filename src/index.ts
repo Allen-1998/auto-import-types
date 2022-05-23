@@ -21,7 +21,7 @@ const defaultOptions = {
 }
 
 export default function (options: Options = {}) {
-  Object.assign(options, defaultOptions)
+  options = { ...defaultOptions, ...options }
 
   const { dtsDir, filepath, globalsPropValue } = options as Required<Options>
   const dirPath = resolve(process.cwd(), dtsDir)
