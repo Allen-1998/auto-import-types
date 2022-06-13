@@ -31,7 +31,7 @@ export default function (options: Options = {}) {
     const eslintConfigs: ESLintConfigs = { globals: {} }
     const dtsArr = []
     for (const filePath of filesPath) {
-      const file = await fs.readFile(dirPath + '\\' + filePath, 'utf-8')
+      const file = await fs.readFile(dirPath + '/' + filePath, 'utf-8')
       const dts = file.match(/(?<=declare (namespace|type|interface) )[a-zA-Z0-9]*/g)
       if (Array.isArray(dts)) {
         dtsArr.push(...dts)
