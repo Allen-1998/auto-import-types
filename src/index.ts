@@ -40,7 +40,7 @@ export default function (options: Options = {}) {
     for (const dts of dtsArr) {
       eslintConfigs.globals[dts] = globalsPropValue
     }
-    fs.writeFile(filepath, JSON.stringify(eslintConfigs, null, 2), 'utf-8')
+    fs.writeFile(filepath, JSON.stringify(eslintConfigs, null, 2) + '\n', 'utf-8')
   }
 
   generateConfigFiles()
