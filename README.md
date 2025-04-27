@@ -4,6 +4,8 @@
 
 Auto Import Types on-demand for Vite. With TypeScript support. The implementation idea by [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import).It will automatically configure declared types in esLint's global option.
 
+> **Note**: If you have already set `"no-undef": "off"` in your `.eslintrc.js` file, you may not need this plugin.
+
 ## Install
 
 `npm i auto-import-types`
